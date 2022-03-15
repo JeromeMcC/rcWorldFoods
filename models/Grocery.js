@@ -39,4 +39,4 @@ Grocery.init(
   }
 );
 
-module.exports=Grocery;
+module.exports = Grocery;

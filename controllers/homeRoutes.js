@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { Grocery } = require('./models')
 
 router.post('/', (req, res) => {});
     // post items to basket
@@ -26,6 +27,7 @@ router.get('/login', (req, res) => {
 
 router.delete('/:id', (req, res) => {
     // delete products from basket
+    
 });
 
 module.exports = router;
@@ -35,3 +37,6 @@ module.exports = router;
 // grocery list
 // logins
 // post items to basket 
+
+// retrieve data for homepage
+// some post method
