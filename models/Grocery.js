@@ -31,3 +31,5 @@ Grocery.init(
     modelName: 'grocery',
   }
 );
+
+module.exports = Grocery;
