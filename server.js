@@ -4,10 +4,28 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const path = require('path');
+const sequelizeStore = require('connect-session-sequelize')(session.Store)
 
 
 const app = express();
 const PORT = process.env.PORT || 3002;
+
+const sess = {
+  secret: "",
+  cookie: {
+      maxAge: 8400,
+      httpOnly: true,
+      secure: false,
+      sameSite: 'strict',
+  },
+  resave: false,
+  saveUnititialized: true,
+  store: new sequelizeStore({
+      db: Sequelize,
+  }),
+};
+
+app.use(session(sess));
 
 
 app.engine('handlebars', hbs.engine);
