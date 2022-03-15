@@ -4,7 +4,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const path = require('path');
-const sequelizeStore = require('connect-session-sequelize')(session.Store)
+const SequelizeStore = require('connect-session-sequelize')(session.Store)
 
 
 const app = express();
@@ -20,7 +20,7 @@ const sess = {
   },
   resave: false,
   saveUnititialized: true,
-  store: new sequelizeStore({
+  store: new SequelizeStore({
       db: Sequelize,
   }),
 };
