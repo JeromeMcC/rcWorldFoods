@@ -1,1 +1,10 @@
-[]
+[{
+    "id": 1,
+    "first_name": "jerome",
+    "last_name": "bones",
+    "email": "jaydom1106@gmail.com",
+    "username": "alphaEcho",
+    "password": "comfortableDoug",
+    "address": "http://dummyimage.com/174x100.png/cc0000/ffffff",
+    "creditCard": "5555-5555-5555-5555"
+  }]
