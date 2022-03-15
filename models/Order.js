@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Grocery extends Model {}
+class Order extends Model {}
 
-Grocery.init(
+Order.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,7 +13,7 @@ Grocery.init(
     },
     product: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull:false,
     },
     price: {
       type: DataTypes.STRING,
@@ -35,8 +35,8 @@ Grocery.init(
     timestamps: false,
     reezeTableName: true,
     underscored: true,
-    modelName: 'grocery',
+    modelName: 'order',
   }
 );
 
-module.exports = Grocery;
+module.exports= Order;
