@@ -1,6 +1,6 @@
 
 const express = require('express');
-
+const session = require('express-session');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const path = require('path');
@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3002;
 const sess = {
   secret: "",
   cookie: {
-      maxAge: 8400,
+      maxAge: 86400,
       httpOnly: true,
       secure: false,
       sameSite: 'strict',
@@ -33,6 +33,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers/index'));
 
+app.use(routes);
 
 app.listen(PORT, () => {
   console.log('Server listening on: http://localhost:' + PORT);
