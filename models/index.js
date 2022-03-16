@@ -2,16 +2,10 @@ const User = require('./User');
 const Grocery = require('./Grocery');
 const Order = require('./Order');
 
-User.hasMany(Order,{
-  foreginKey: user_id
-});
+User.hasMany(Order),
 
-Order.belongsTo(User, {
-  foreginKey: user_id
-});
+Order.belongsTo(User),
 
-Order.hasMany(Grocery,{
-  foreginKey:user_id
-});
+Order.hasMany(Grocery),
 
 module.exports = {User,Grocery, Order};

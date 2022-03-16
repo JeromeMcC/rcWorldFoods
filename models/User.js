@@ -71,7 +71,7 @@ User.init(
       beforeUpdate: async (updatedUserData) => {
         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
         updatedUserData.address = await bcrypt.hash(updatedUserData.password, 10);
-        updatedUserData.creditCard = await bcrypt.hash(updatedUserData.password, 10);
+        updatedUserData.creditCardNum = await bcrypt.hash(updatedUserData.password, 10);
         return updatedUserData;
       },
     },
