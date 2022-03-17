@@ -1,0 +1,136 @@
+body {
+    background-color: #EFFFFD;
+}
+
+.main {
+    margin-bottom: 10px;
+}
+
+.login-page {
+    width: 660px;
+    padding: 5% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    background-color: #B8FFF9;
+    max-width: 560px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: 1;
+    background: white;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.form button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: 0;
+    background: #5463FF;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #EFFFFD;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form .message {
+    font-size: 18px;
+}
+
+.form .message a {
+    text-decoration: none;
+}
+
+h1 {
+    padding-bottom: 5px;
+    text-align: center;
+    color: #5463FF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 35px;
+    padding-right: 20px;
+}
+
+
+.expired {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-2 {
+    margin-left: 91px;
+}
+
+.product-card {
+        flex: 0 0 75%;
+        max-width: 75%;
+}
+
+.home-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-container .card {
+    border: 1px solid black;
+    margin: 10px 10px;
+    min-width: 200px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.add {
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    min-width: 200px;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border: none;
+}
+
+.card button {
+    background-color: #4D77FF;
+    color: white;
+    width: 40%;
+    border-radius: 10px;
+}
+
+
+.navbar-nav {
+
+}
+
+.container-fluid button {
+    background-color: blue;
+}
+
+.text-center h5 {
+    color: white;
+}
