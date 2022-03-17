@@ -16,12 +16,12 @@
 </nav>
  
  <div class="container">
-   {{#each groceries as |grocery|}}
+   {{#each products as |product|}}
 <div class="card" style="width: 18rem;" width="600px">
-    <img src={{grocery.product_image}} alt="">
+    <img src={{product.product_image}} alt="">
   <div class="card-body">
-    <h5 class="card-title"> {{grocery.product}}</h5>
-    <p class="card-text">{{grocery.price}}</p>
+    <h5 class="card-title"> {{product.product}}</h5>
+    <p class="card-text">{{product.price}}</p>
     <button>ADD</button>
   </div>
 </div>
@@ -92,7 +92,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3 ">
-    <h5> 2022 By World Food Group </h5>
+    <h5> 2022 By loveBites LLC </h5>
   </div>
   <!-- Copyright -->
 </footer>
