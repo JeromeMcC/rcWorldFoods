@@ -6,6 +6,7 @@ router.post('/', (req, res) => {});
 
 router.get('/', (req, res) => {
     // get products for homepage
+    console.log('here....')
 });
 
 router.get('/', (req, res) => {
