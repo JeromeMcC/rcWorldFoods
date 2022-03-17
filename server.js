@@ -4,24 +4,24 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const path = require('path');
-const SequelizeStore = require('connect-session-sequelize')(session.Store)
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 
 const app = express();
 const PORT = process.env.PORT || 3002;
 
 const sess = {
-  secret: "",
+  secret: '',
   cookie: {
-      maxAge: 86400,
-      httpOnly: true,
-      secure: false,
-      sameSite: 'strict',
+    maxAge: 86400,
+    httpOnly: true,
+    secure: false,
+    sameSite: 'strict',
   },
   resave: false,
   saveUnititialized: true,
   store: new SequelizeStore({
-      db: Sequelize,
+    db: Sequelize,
   }),
 };
 

@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Grocery } = require('./models')
+const { Grocery } = require('./models');
 
 router.post('/', (req, res) => {});
-    // post items to basket
+// post items to basket
 
 router.get('/', (req, res) => {
-    // get products for homepage
+  // get products for homepage
 });
 
 router.get('/', (req, res) => {
@@ -17,17 +17,17 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
-      res.redirect('/profile');
-      return;
-    }
-  
-    res.render('login');
-  });
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
+
+  res.render('login');
+});
 
 router.delete('/:id', (req, res) => {
-    // delete products from basket
-    
+  // delete products from basket
+
 });
 
 module.exports = router;
@@ -36,7 +36,7 @@ module.exports = router;
 // basket route
 // grocery list
 // logins
-// post items to basket 
+// post items to basket
 
 // retrieve data for homepage
 // some post method

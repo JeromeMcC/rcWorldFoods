@@ -1,31 +1,31 @@
 [{
     "id": 1,
-    "product": "Shiratamako - Rice Flour",
-    "price": "$1.15",
-    "product_image": "http://dummyimage.com/174x100.png/cc0000/ffffff"
+    "product": "Banana Pudding",
+    "price": "$7.00",
+    "product_image": "./media/images/bananapudding.jpeg"
   }, {
     "id": 2,
-    "product": "Onions - Red",
-    "price": "$6.70",
-    "product_image": "http://dummyimage.com/249x100.png/dddddd/000000"
+    "product": "Cakesicles",
+    "price": "$30.00",
+    "product_image": "./media/images/cakesicles.jpeg"
   }, {
     "id": 3,
-    "product": "Brandy - Orange, Mc Guiness",
-    "price": "$9.32",
-    "product_image": "http://dummyimage.com/217x100.png/dddddd/000000"
+    "product": "Chocolate Pretzels",
+    "price": "$12.00",
+    "product_image": "./media/images/chocolatepretzel.jpeg"
   }, {
     "id": 4,
-    "product": "Table Cloth 62x120 Colour",
-    "price": "$9.03",
-    "product_image": "http://dummyimage.com/198x100.png/ff4444/ffffff"
+    "product": "Chocolate Strawberries",
+    "price": "$25.00",
+    "product_image": "./media/images/chocolatestrawberries.jpeg"
   }, {
     "id": 5,
-    "product": "Blouse / Shirt / Sweater",
-    "price": "$8.76",
-    "product_image": "http://dummyimage.com/138x100.png/cc0000/ffffff"
+    "product": "Hot Chocolate Bombs",
+    "price": "$20.00",
+    "product_image": "./media/images/hotchocolatebombs.jpg"
   }, {
     "id": 6,
-    "product": "Bread - Hot Dog Buns",
+    "product": "",
     "price": "$1.18",
     "product_image": "http://dummyimage.com/225x100.png/ff4444/ffffff"
   }, {
