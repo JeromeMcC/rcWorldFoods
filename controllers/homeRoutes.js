@@ -1,20 +1,22 @@
 const router = require('express').Router();
-const { Grocery } = require('./models');
+const { Product, User } = require('../models');
 
 router.post('/', (req, res) => {});
 // post items to basket
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
+  const productData = await Product.findAll({});
   // get products for homepage
+
+const products = productData.map((product) => product.get({ plain: true }));
+
+res.render('homepage', { products });
+
+console.log("you're in");
 });
+router.get('/', (req, res) => {});
 
-router.get('/', (req, res) => {
-
-});
-
-router.get('/', (req, res) => {
-
-});
+router.get('/', (req, res) => {});
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
@@ -27,7 +29,6 @@ router.get('/login', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete products from basket
-
 });
 
 module.exports = router;

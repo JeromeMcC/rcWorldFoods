@@ -29,8 +29,8 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'grocery',
+    modelName: 'product',
   }
 );
 
-module.exports = Grocery;
+module.exports = Product;

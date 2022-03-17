@@ -1,6 +1,6 @@
-const router = require('express').router();
+//const router = require('express').router();
 // retrieve data from user table
 // querying associations -db - model association
 
 
-module.exports = router;
+//module.exports = router;

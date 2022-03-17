@@ -1,7 +1,7 @@
 const sequelize = require('../config/connection');
-const { User, Grocery, Order } = require('../models');
+const { User, Product, Order } = require('../models');
 
-const groceryData = require('./groceryData.json');
+const productData = require('./productData.json');
 const userData = require('./userData.json');
 
 const orderData = require('./orderData.json');
@@ -14,8 +14,8 @@ const seedDatabase = async () => {
     returning: true,
   });
   console.log('user table created');
-  await Grocery.bulkCreate (
-    groceryData, {
+  await Product.bulkCreate (
+    productData, {
       returning: true,
     });
   await Order.bulkCreate (

@@ -1,0 +1,53 @@
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #134b5f;
+    border-radius: 5px;
+}
+
+.last-container {
+    display: flex;
+    align-content: row;
+    margin-right: 80px;
+}
+
+/* .btn {
+    margin-top: 15px;
+    padding-left: 80px;
+} */
+
+.last-container p {
+    padding-left: 80px;
+    color: white;
+    font-size: 20px;
+}
+.container-1 h3 {
+    color: white;
+    font-size: 23px;
+    padding-left: 100px;
+}
+
+.btn input {
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn button {
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.product-card {
+    height: 100px;
+}
+
+.navbar {
+    height: 80px; 
+    background-color: #4D77FF;
+}
+
+.input-group input {
+    width: 100px;
+}
+
