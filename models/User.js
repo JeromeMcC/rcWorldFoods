@@ -51,7 +51,7 @@ User.init(
       allowNull: false,
 
     },
-    creditCard:{
+    creditCardNum:{
       type: DataTypes.STRING,
       allowNull: false,
       validate:{
@@ -65,13 +65,13 @@ User.init(
       beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         newUserData.address = await bcrypt.hash(newUserData.password, 10);
-        newUserData.creditCard = await bcrypt.hash(newUserData.password, 10);
+        newUserData.creditCardNum = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
       beforeUpdate: async (updatedUserData) => {
         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
         updatedUserData.address = await bcrypt.hash(updatedUserData.password, 10);
-        updatedUserData.creditCard = await bcrypt.hash(updatedUserData.password, 10);
+        updatedUserData.creditCardNum = await bcrypt.hash(updatedUserData.password, 10);
         return updatedUserData;
       },
     },

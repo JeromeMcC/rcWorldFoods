@@ -134,3 +134,27 @@ h1 {
 .text-center h5 {
     color: white;
 }
+
+
+body {
+    background-color: #9ADCFF;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    box-shadow: 5px 10px 8px #888888;
+}
+
+header li {
+    display: inline;
+    list-style-type: none;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+header li a {
+    text-decoration:none
+}
