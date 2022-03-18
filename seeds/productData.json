@@ -2,32 +2,32 @@
     "id": 1,
     "product": "Banana Pudding",
     "price": "$7.00",
-    "product_image": "./media/images/bananapudding.jpeg"
+    "product_image": "https://i.imgur.com/MRBaEB6.jpeg"
   }, {
     "id": 2,
     "product": "Cakesicles",
     "price": "$30.00",
-    "product_image": "./media/images/cakesicles.jpeg"
+    "product_image": "https://i.imgur.com/itrhHDC.jpeg"
   }, {
     "id": 3,
     "product": "Chocolate Pretzels",
     "price": "$12.00",
     "product_image": "https://imgur.com/a/r9yd0M0"
+    "product_image": "https://i.imgur.com/UWP8QID.jpeg"
   }, {
     "id": 4,
     "product": "Chocolate Strawberries",
     "price": "$25.00",
-    "product_image": "./media/images/chocolatestrawberries.jpeg"
+    "product_image": "https://i.imgur.com/jMY5mNn.jpeg"
   }, {
     "id": 5,
     "product": "Hot Chocolate Bombs",
     "price": "$20.00",
-    "product_image": "./media/images/hotchocolatebombs.jpg"
+    "product_image": "https://i.imgur.com/nfYNm5c.jpeg"
   }, {
     "id": 6,
-    "product": "",
+    "product": "Pretzel Bundle",
     "price": "$1.18",
+
     "product_image": "http://dummyimage.com/225x100.png/ff4444/ffffff"
   }]
-   
- 
