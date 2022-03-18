@@ -5,7 +5,14 @@ router.post('/', (req, res) => { });
 // post items to basket
 
 router.get('/', async (req, res) => {
-  const productData = await Product.findAll({});
+  const productData = await Product.findAll({
+    // include: [
+    //   {
+    //     model: Product,
+    //     attributes: ['product_image'],
+    //   },
+    // ],
+  });
   // get products for homepage
 
   const products = productData.map((product) => product.get({ plain: true }));
@@ -24,9 +31,8 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('homepage');
 });
-
 
 module.exports = router;
 
@@ -36,3 +42,5 @@ module.exports = router;
 
 // retrieve data for homepage
 // some post method
+
+// pictures to render
