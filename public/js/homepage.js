@@ -4,7 +4,7 @@ loginBtn.addEventListener('click', () => {
 });
 
 
-const cartBtn = document.getElementById('cart');
+const cartBtn = document.getElementById('basket');
 cartBtn.addEventListener('click,', () => {
   document.location.assign('/basket');
 });
