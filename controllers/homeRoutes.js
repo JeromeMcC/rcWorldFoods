@@ -12,11 +12,11 @@ const products = productData.map((product) => product.get({ plain: true }));
 
 res.render('homepage', { products });
 
-console.log("you're in");
+console.log('you in');
 });
-router.get('/', (req, res) => {});
+//router.get('/checkout', (req, res) => {});
 
-router.get('/', (req, res) => {});
+//router.get('/', (req, res) => {});
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
@@ -27,9 +27,12 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.delete('/:id', (req, res) => {
-  // delete products from basket
-});
+//router.get('/basket', (req,res) => {});
+
+
+//router.delete('/:id', (req, res) => {
+// delete products from basket
+//});
 
 module.exports = router;
 
