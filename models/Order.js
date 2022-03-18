@@ -11,18 +11,6 @@ Order.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    product: {
-      type: DataTypes.STRING,
-      allowNull:false,
-    },
-    price: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    product_image: {
-      type: DataTypes.STRING,
-    },
-
   },
   {
     sequelize,
