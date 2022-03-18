@@ -19,20 +19,25 @@ router.get('/', async (req, res) => {
 
   res.render('homepage', { products });
 
-  console.log("you're in");
-});
-router.get('/', (req, res) => { });
-
-router.get('/', (req, res) => { });
-
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/profile');
     return;
   }
 
+  res.render('login');
+});
+
+//router.get('/basket', (req,res) => {});
+
+
+//router.delete('/:id', (req, res) => {
+// delete products from basket
+//});
+
   res.render('homepage');
 });
+
 
 module.exports = router;
 
