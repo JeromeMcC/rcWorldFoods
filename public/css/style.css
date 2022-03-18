@@ -21,6 +21,16 @@ body {
     text-align: center;
 }
 
+
+.form-singup {
+    position: relative;
+    background-color: #B8FFF9;
+    max-width: 560px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
 .form input {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     outline: 1;
