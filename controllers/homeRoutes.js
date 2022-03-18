@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Product, User } = require('../models');
 
+
 //router.post('/', (req, res) => { });
 // post items to basket
 
@@ -19,12 +20,6 @@ router.get('/', async (req, res) => {
 
   res.render('homepage', { products });
 
-  console.log('you in');
-});
-//router.get('/checkout', (req, res) => {});
-
-//router.get('/', (req, res) => {});
-
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/profile');
@@ -40,6 +35,10 @@ router.get('/login', (req, res) => {
 //router.delete('/:id', (req, res) => {
 // delete products from basket
 //});
+
+  res.render('homepage');
+});
+
 
 module.exports = router;
 
