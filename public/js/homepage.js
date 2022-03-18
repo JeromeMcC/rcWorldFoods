@@ -1,12 +1,13 @@
 const loginBtn = document.getElementById('login');
 loginBtn.addEventListener('click', () => {
-  document.location.replace('/login');
+  document.location.assign('/login');
 });
 
 
 const cartBtn = document.getElementById('cart');
 cartBtn.addEventListener('click,', () => {
-  document.location.replace('/basket');
+  document.location.assign('/basket');
 });
+
 
 //const addtoCart= document.getElementById('addtocart');

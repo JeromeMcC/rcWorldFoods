@@ -13,11 +13,11 @@ Order.belongsTo(User,{
 Order.hasMany(Product),
 
 //Product.belongsToMany(Order, {
-  //through: {
-    //model: User,
-    //unique: false
-  //},
-  //as: 'ordered_products'
+//through: {
+//model: User,
+//unique: false
+//},
+//as: 'ordered_products'
 //}),
 
 module.exports = {User,Product, Order};

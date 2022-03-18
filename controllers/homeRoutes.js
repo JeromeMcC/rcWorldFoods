@@ -1,18 +1,25 @@
 const router = require('express').Router();
 const { Product, User } = require('../models');
 
-router.post('/', (req, res) => {});
+//router.post('/', (req, res) => { });
 // post items to basket
 
 router.get('/', async (req, res) => {
-  const productData = await Product.findAll({});
+  const productData = await Product.findAll({
+    // include: [
+    //   {
+    //     model: Product,
+    //     attributes: ['product_image'],
+    //   },
+    // ],
+  });
   // get products for homepage
 
-const products = productData.map((product) => product.get({ plain: true }));
+  const products = productData.map((product) => product.get({ plain: true }));
 
-res.render('homepage', { products });
+  res.render('homepage', { products });
 
-console.log('you in');
+  console.log('you in');
 });
 //router.get('/checkout', (req, res) => {});
 
@@ -38,9 +45,9 @@ module.exports = router;
 
 // delete product from baskets
 // basket route
-// grocery list
-// logins
 // post items to basket
 
 // retrieve data for homepage
 // some post method
+
+// pictures to render
