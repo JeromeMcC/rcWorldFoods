@@ -9,7 +9,7 @@ const apiRoutes = require('./api');
 
 router.get('/', async (req, res) => {
   
-  res.render('homepage',);
+  res.render('login',);
   });
 
 
