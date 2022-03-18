@@ -1,7 +1,8 @@
  <nav class="navbar navbar-dark bg-dark">
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <button class="btn btn-primary me-md-2" type="button">Sign In</button>
-  <button class="btn btn-primary" type="button">Cart</button>
+
+  <button class="btn btn-primary me-md-2" type="button" id='login'>Login</button>
+  <button class="btn btn-primary" type="button" id='basket'>Cart</button>
 </div>
 </nav>
  
@@ -12,7 +13,7 @@
   <div class="card-body">
     <h5 class="card-title"> {{product.product}}</h5>
     <p class="card-text">{{product.price}}</p>
-    <button id='addtocart'>ADD</button>
+    <button id='addtocart'>Add to Cart</button>
   </div>
 </div>
      {{/each}}
@@ -59,6 +60,6 @@
   <!-- Copyright -->
 </footer>
 
-<script src="/js/login.js"></script>
+<script src="/js/homepage.js"></script>
 
  

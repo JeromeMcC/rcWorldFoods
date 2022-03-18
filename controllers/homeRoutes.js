@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Product, User } = require('../models');
 
-router.post('/', (req, res) => { });
+
+//router.post('/', (req, res) => { });
 // post items to basket
 
 router.get('/', async (req, res) => {

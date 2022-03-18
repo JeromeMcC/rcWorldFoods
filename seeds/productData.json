@@ -12,7 +12,6 @@
     "id": 3,
     "product": "Chocolate Pretzels",
     "price": "$12.00",
-    "product_image": "https://imgur.com/a/r9yd0M0"
     "product_image": "https://i.imgur.com/UWP8QID.jpeg"
   }, {
     "id": 4,
@@ -27,7 +26,7 @@
   }, {
     "id": 6,
     "product": "Pretzel Bundle",
-    "price": "$1.18",
 
-    "product_image": "http://dummyimage.com/225x100.png/ff4444/ffffff"
+    "product_image": "https://imgur.com/a/vMHoePu"
   }]
+   
