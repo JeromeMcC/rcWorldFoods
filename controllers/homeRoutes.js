@@ -1,22 +1,22 @@
 const router = require('express').Router();
 const { Product, User } = require('../models');
 
-router.post('/', (req, res) => {});
+router.post('/', (req, res) => { });
 // post items to basket
 
 router.get('/', async (req, res) => {
   const productData = await Product.findAll({});
   // get products for homepage
 
-const products = productData.map((product) => product.get({ plain: true }));
+  const products = productData.map((product) => product.get({ plain: true }));
 
-res.render('homepage', { products });
+  res.render('homepage', { products });
 
-console.log("you're in");
+  console.log("you're in");
 });
-router.get('/', (req, res) => {});
+router.get('/', (req, res) => { });
 
-router.get('/', (req, res) => {});
+router.get('/', (req, res) => { });
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
@@ -27,16 +27,11 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.delete('/:id', (req, res) => {
-  // delete products from basket
-});
 
 module.exports = router;
 
 // delete product from baskets
 // basket route
-// grocery list
-// logins
 // post items to basket
 
 // retrieve data for homepage
