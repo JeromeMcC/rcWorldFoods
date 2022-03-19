@@ -19,5 +19,12 @@ cartbuttons.forEach((button) => {
     isUserLogged
       .then((response) => response.json())
       .then((json) => console.log(json.login_status));
+
+    reRouter((isUserLogged) => {
+      if (!isUserLogged) {
+        res.redirect('login');
+        return;
+      }
+    });
   });
 });
