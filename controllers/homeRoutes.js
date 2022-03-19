@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 const { Product, User, Order } = require('../models');
 
 //router.post('/', (req, res) => {
@@ -9,6 +10,7 @@ const { Product, User, Order } = require('../models');
 router.get('/', async (req, res) => {
   const productData = await Product.findAll({});
   // get products for homepage
+
 
   const products = productData.map((product) =>
     product.get({
@@ -22,21 +24,26 @@ router.get('/', async (req, res) => {
 
   console.log('you are in');
 });
-//router.get('/checkout', (req, res) => {});
+// router.get('/checkout', (req, res) => { });
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
-
   res.render('login');
 });
+
+
+// router.get('/signup', (req, res) => {
+
+
 
 router.get('/signup', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
+
 
   res.render('signup');
 });
@@ -50,26 +57,7 @@ router.get('/order', async (req, res) => {
     res.status(500).send(err.mes);
   }
 });
-// const orderData = Order.findAll({
-//   where: {
-//     orderID: Order.id
-//   }
-// });
 
-// // get products for homepage
-
-// const orders = orderData.map((order) =>
-//   order.get({
-//     plain: true,
-//   })
-// );
-
-//router.delete('/:id', (req, res) => {
-// delete products from basket
-//});
-
-// res.render('homepage');
-//});
 
 module.exports = router;
 
