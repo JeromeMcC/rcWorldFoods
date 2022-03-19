@@ -73,11 +73,3 @@ router.get('/order', async (req, res) => {
 
 module.exports = router;
 
-// delete product from baskets
-// basket route
-// post items to basket
-
-// retrieve data for homepage
-// some post method
-
-// pictures to render
