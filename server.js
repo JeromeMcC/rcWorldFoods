@@ -30,8 +30,8 @@ app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 app.use(require('./controllers/index'));
-
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {

@@ -32,13 +32,6 @@ User.init(
         isEmail: true,
       },
     },
-    username:{
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate:{
-        isAlphanumeric: true,
-      },
-    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -46,18 +39,49 @@ User.init(
         len: [8],
       },
     },
-    address:{
+    address: {
       type: DataTypes.STRING,
       allowNull: false,
-
     },
-    creditCardNum:{
+    apartment: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    state: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    zip: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    country: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    creditCardName: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate:{
+    },
+    creditCardNum: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
         isNumeric: true,
-        isCreditCard: true
+        isCreditCard: true,
       },
+    },
+    creditCardExp: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    creditCardCVV: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
@@ -69,9 +93,18 @@ User.init(
         return newUserData;
       },
       beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-        updatedUserData.address = await bcrypt.hash(updatedUserData.password, 10);
-        updatedUserData.creditCardNum = await bcrypt.hash(updatedUserData.password, 10);
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
+        updatedUserData.address = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
+        updatedUserData.creditCardNum = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
         return updatedUserData;
       },
     },
