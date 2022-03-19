@@ -16,7 +16,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
 
-      window.location = '/';
+      document.location='/';
 
     } else {
       alert(response.statusText);
