@@ -68,7 +68,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
-router.get('/login', (req, res) => {
+router.get('/login', (req,) => {
   console.log(req);
 });
 
