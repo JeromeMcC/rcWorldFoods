@@ -1,3 +1,4 @@
+
 # LoveBites Chocolates
 **for storefrontt**
 
@@ -26,3 +27,4 @@
 2. NPM I
 3. Run mysql
 4. npm start
+
