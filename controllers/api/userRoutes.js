@@ -32,7 +32,7 @@ router.post('/user/login', async (req, res) => {
         //password: req.body.password,
 
       },
-     
+
     });
     if (!userData) {
       res
@@ -75,6 +75,7 @@ router.post('/logout', (req, res) => {
 
   } else {
     res.status(404).end();
+  }
 });
 
 router.get('/login', (req, res) => {

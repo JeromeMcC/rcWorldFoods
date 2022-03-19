@@ -24,15 +24,17 @@ router.get('/', async (req, res) => {
 
   console.log('you are in');
 });
-//router.get('/checkout', (req, res) => {});
+// router.get('/checkout', (req, res) => { });
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
+  res.render('login');
+});
 
 
-  router.get('/signup', (req, res) => {
+// router.get('/signup', (req, res) => {
 
 
 
@@ -55,38 +57,5 @@ router.get('/order', async (req, res) => {
     res.status(500).send(err.mes);
   }
 });
-// const orderData = Order.findAll({
-//   where: {
-//     orderID: Order.id
-//   }
-// });
-
-// // get products for homepage
-
-// const orders = orderData.map((order) =>
-//   order.get({
-//     plain: true,
-//   })
-// );
-
-  //router.delete('/:id', (req, res) => {
-  // delete products from basket
-  //});
-
-  // res.render('homepage');
-});
-
-
-// res.render('homepage');
-//});
 
 module.exports = router;
-
-// delete product from baskets
-// basket route
-// post items to basket
-
-// retrieve data for homepage
-// some post method
-
-// pictures to render
