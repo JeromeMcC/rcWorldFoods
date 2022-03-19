@@ -1,26 +1,28 @@
-###Titile
-##LoveBites Chocolates
 
-##About
-# This project help local storefont sell their product online and delivery to their customer.
+# LoveBites Chocolates
+**for storefrontt**
 
-## Contributors 
-1. JeromeMcC
-https://github.com/JeromeMcC
-3. John P.
-https://github.com/Johnpo34
-4. Hak G
-https://github.com/srongov
+## About
+**Help local store to sell their product online and delivery to their customer.
 
-## Build With
-- sequelize
+### project 2 for Penn LPS bootcamp. 
+
+### Contributors for this project
+- https://github.com/JeromeMcC
+- https://github.com/Johnpo34
+- https://github.com/srongov
+
+## Build With:
+
 - dotenv
+- seaguelize
 - expressjs
-- express-handlebars
 - mysql2
+- payment npm package
 - eslint
 
 ## Getting Start
+
 1. Clone the repo
 2. NPM I
 3. Run mysql
