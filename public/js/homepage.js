@@ -11,11 +11,13 @@ cartBtn.addEventListener('click', () => {
 const cartbuttons = document.querySelectorAll('.addtocart');
 console.log(cartbuttons);
 cartbuttons.forEach((button) => {
-  button.addEventListener('click', async () => {
-    const isUserLogged= await fetch('/api/login/info', {
+  button.addEventListener('click', () => {
+    const isUserLogged = fetch('/api/login/info', {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     });
-    window.IsUserLoggedResponse = isUserLogged;
+    isUserLogged
+      .then((response) => response.json())
+      .then((json) => console.log(json.login_status));
   });
 });
