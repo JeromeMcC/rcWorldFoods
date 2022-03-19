@@ -2,10 +2,15 @@
         <div class="form">
             <h1>Love Bites</h1>
             <form action="" class="login-form">
-                <input type="text" placeholder="User Name">
-                <input type="text" placeholder="Password">
-                <button>Login</button>
-                <p class="message">Not a Member? <button id='signUp'> Sign Up</button ></p>
+                <input class="form-input" type="text" id="email-login" placeholder="email">
+                <input class="form-input" type="password" id="password-login" placeholder="password">
+                <button class="btn btn-primary" type="submit">login</button>
+                {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/signup">Sign Up</a>
+        {{/if}}
               </form>
         </div>
     </div>

@@ -1,9 +1,13 @@
-const router = require('express').router();
-const { User, Order } = require('../../');
+const router = require('express').Router();
+const { Product, Order } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // retrieve items from certain databse by id
 // user.findOne or user.findAll
+// router.get('/orderroute',withAuth, (req, res) =>{
+//   const orderData = await Order.id
+// } )
+
 router.post('/:id', withAuth, (req, res) => {
   try {
     Order.findAll({

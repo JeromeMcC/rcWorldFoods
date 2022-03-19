@@ -10,14 +10,16 @@ Order.belongsTo(User,{
   foreignKey:'user_id',
 }),
 
-Order.hasMany(Product),
+Order.hasMany(Product,{
+  foreignKey:'order_id'
+}),
 
-//Product.belongsToMany(Order, {
-//through: {
-//model: User,
-//unique: false
-//},
-//as: 'ordered_products'
-//}),
+// Product.belongsToMany(Order, {
+// through: {
+// model: User,
+// unique: false
+// },
+// as: 'ordered_products'
+// }),
 
 module.exports = {User,Product, Order};

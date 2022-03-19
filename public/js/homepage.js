@@ -4,9 +4,10 @@ loginBtn.addEventListener('click', () => {
 });
 
 
-const cartBtn = document.getElementById('basket');
-cartBtn.addEventListener('click,', () => {
-  document.location.assign('/basket');
+const cartBtn = document.getElementById('order');
+cartBtn.addEventListener('click', () => {
+  console.log('im clicked'),
+  document.location.assign('/order');
 });
 
 
