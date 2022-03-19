@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 const { Product, User, Order } = require('../models');
 
 //router.post('/', (req, res) => {
@@ -9,6 +10,7 @@ const { Product, User, Order } = require('../models');
 router.get('/', async (req, res) => {
   const productData = await Product.findAll({});
   // get products for homepage
+
 
   const products = productData.map((product) =>
     product.get({
@@ -29,14 +31,17 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
-});
+
+  router.get('/signup', (req, res) => {
+
+
 
 router.get('/signup', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
+
 
   res.render('signup');
 });
@@ -64,9 +69,13 @@ router.get('/order', async (req, res) => {
 //   })
 // );
 
-//router.delete('/:id', (req, res) => {
-// delete products from basket
-//});
+  //router.delete('/:id', (req, res) => {
+  // delete products from basket
+  //});
+
+  // res.render('homepage');
+});
+
 
 // res.render('homepage');
 //});
