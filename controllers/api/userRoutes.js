@@ -43,13 +43,11 @@ router.post('/user/login', async (req, res) => {
 
 
       if (isPasswordCorrect === true) {
-        res.status(200).json('i hope i can finish this');
-        req.session.save(() => {
-          req.session.user_id = userData.id;
-          req.session.logged_in = true;
+        req.session.user_id = userData.id;
+        req.session.logged_in = true;
+        req.session.save();
 
-          //res.json({ user: userData, message: 'You are now logged in!' });
-        });
+        res.status(200).json('i hope i can finish this');
       } else {
         res
           .status(400)
@@ -82,6 +80,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/login/info', (req, res) => {
+  console.log(req.session);
   if (req.session.logged_in) {
     res.status(200).json({ login_status: true });
   } else {
