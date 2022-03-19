@@ -75,13 +75,11 @@ router.get('/login', (req, res) => {
   console.log(req);
 });
 
-router.post('/logout', (req, res) => {
+router.get('/login/info', (req, res) => {
   if (req.session.logged_in) {
-    req.session.destroy(() => {
-      res.status(204).end();
-    });
+    res.status(200).json({ login_status: true });
   } else {
-    res.status(404).end();
+    res.status(200).json({ login_status: false });
   }
 });
 
